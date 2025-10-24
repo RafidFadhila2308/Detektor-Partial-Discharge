@@ -1,0 +1,12 @@
+cd /d "D:\Formulir_PD"
+python -m PyInstaller --clean --onefile ^
+--name "FormulirPD" ^
+--icon "Logo\Logo_PLN.ico" ^
+--noconfirm ^
+--hidden-import Halaman_Depan_Laporan_PLN ^
+--hidden-import Halaman_Konversi_Data_Gambar_Filtered ^
+--hidden-import Halaman_Formulir_Laporan_PLN ^
+--hidden-import Halaman_Konversi_Laporan_PLN ^
+--add-data "Logo\Logo_PLN.png;Logo" ^
+--add-data "Document\Form Pengujian PD Kabel Power dan Incoming 20KV.docx;Document" ^
+"Halaman_Depan_Laporan_PLN.py"
